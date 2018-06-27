@@ -1,5 +1,5 @@
 <div class="background--landing" id="landing">
-	<div class="container d-flex h-100">
+	<div class="container d-flex" style="min-height: 100vh; padding-top: 128px; padding-bottom: 128px;">
 	    <div class="row justify-content-center align-self-center no-margin p-5 bg-white">
 	    	<div class="col-10 align-center">
 			    <h3 class="fg-blue bold">Daftar</h3>

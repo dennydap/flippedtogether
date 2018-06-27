@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Post_model extends CI_Model {
 	public function getPost() {
 		$this->db->join('users', 'users.id = posts.author_id', 'left');
+		$this->db->order_by('posts.id', 'desc');
 		return $this->db->get('posts')->result();
 	}
 	public function getPostById($id) {
@@ -17,6 +18,9 @@ class Post_model extends CI_Model {
 	public function getPostLimit($num) {
 		$this->db->limit($num);
 		return $this->db->get('posts')->result();
+	}
+	public function addPost($data) {
+		return $this->db->insert('posts', $data);
 	}
 	public function editPost($data) {
 		return $this->db->get('posts')->result();

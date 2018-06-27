@@ -4,7 +4,7 @@
 			<h1 class="fg-white bold letter-spacing-1" data-aos="fade-up">Flipped Classroom, untuk semua orang</h1>
 			<div class="col-12 padding-top-sm align-center" data-aos="fade-up" data-aos-delay=500>
 				<button class="btn btn-outline-light btn-lg col-md-3 js-btn-learnmore">Pelajari</button>
-				<button class="btn btn-outline-success btn-lg col-md-3 fg-white">Jelajahi</button>
+				<a class="btn btn-outline-success btn-lg col-md-3 fg-white" href="<?php echo base_url('/posts/explore'); ?>">Jelajahi</a>
 			</div>
 		</div>
 	</div>

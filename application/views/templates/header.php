@@ -29,15 +29,11 @@
 					<li class="nav-item dropdown">
 						<?php if($this->session->has_userdata('logged_in')) { ?>
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<?php echo $this->session->userdata('username'); ?>
+								<?php echo $this->session->userdata('name'); ?>
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<?php if($this->session->userdata('role') == 'user') { ?>
-									<a class="dropdown-item" href="<?php echo base_url("/"); ?>">Dashboard</a>
-								<?php } else { ?>
-									<a class="dropdown-item" href="<?php echo base_url("/"); ?>">Dashboard</a>
-								<?php } ?>
-									<a class="dropdown-item" href="<?php echo base_url("/user/logout"); ?>">Logout</a>
+								<a class="dropdown-item" href="<?php echo base_url('user/dashboard'); ?>">Dashboard</a>
+								<a class="dropdown-item" href="<?php echo base_url("/user/logout"); ?>">Logout</a>
 							</div>
 						<?php } else { ?>
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

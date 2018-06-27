@@ -1,6 +1,6 @@
 <div class="container" style="min-height: 100vh; padding-top: 128px;">
-	<h1 class="bold text-center">Jelajahi</h1>
-	<div class="row mt-5">
+	<h1 class="bold text-center" data-aos="fade-up">Jelajahi</h1>
+	<div class="row mt-5" data-aos="fade-up" data-aos-delay="500">
 		<?php foreach($query as $obj){ ?>
 			<div class="col-12 col-lg-4 my-3">
 				<div class="card">
